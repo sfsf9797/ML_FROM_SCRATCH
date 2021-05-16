@@ -106,7 +106,7 @@ class multinomialNB():
         self.prior =  self.feature_count_ /self.word_count_byClass
 
     def predict(self,x):
-        self.prob = x @ self.prior.T
-        return  self.prob
+        prob = x @ self.prior.T
+        return  prob
 
 
