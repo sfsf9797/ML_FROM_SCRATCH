@@ -20,10 +20,10 @@ class GaussianNB():
     num_class : ndarray of shape (n_classes,)
         count of each class in the training sample
 
-    mean: ndarray of shape (n_classes,)
+    mean: ndarray of shape (n_classes,n_features)
             mean of each variance
     
-    variance: ndarray of shape (n_classes,)
+    variance: ndarray of shape (n_classes,n_features)
         variance of each variance
     
     prior :  ndarray of shape (n_classes,)
